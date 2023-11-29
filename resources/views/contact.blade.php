@@ -2,6 +2,8 @@
 
 @section('title', 'Contact Us')
 
+@section('contact_nav_active', 'active')
+
 @section('content')
     <div role="main" class="main">
 
@@ -13,7 +15,7 @@
                     </div>
                     <div class="col-md-4 order-1 order-md-2 align-self-center">
                         <ul class="breadcrumb d-flex justify-content-md-end text-4 font-weight-medium">
-                            <li class="text-capitalize"><a href="demo-dentist.html" class="text-color-default text-color-hover-primary text-decoration-none text-capitalize">Home</a></li>
+                            <li class="text-capitalize"><a href="{{route('home')}}" class="text-color-default text-color-hover-primary text-decoration-none text-capitalize">Home</a></li>
                             <li class="text-capitalize active">Contact</li>
                         </ul>
                     </div>
@@ -99,43 +101,68 @@
                 <div class="row">
                     <div class="col text-center">
                         <h2 class="d-inline-block line-height-5 text-4 positive-ls-3 font-weight-semibold text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter">BOOK ONLINE</h2>
-                        <h3 class="text-color-dark text-9 line-height-3 text-transform-none font-weight-semibold mb-4 mb-lg-3 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">Request an Appointment</h3>
-                        <p class="text-3-5 font-weight-medium pb-1 mb-4 mb-lg-2 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non.</p>
+                        <h3 class="text-color-dark text-9 line-height-3 text-transform-none font-weight-semibold mb-4 mb-lg-3 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">Schedule an Appointment</h3>
+                        <p class="text-3-5 font-weight-medium pb-1 mb-4 mb-lg-2 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Schedule your appointment conveniently by selecting a time that suits you and the doctor you prefer.</p>
 
-                        <form class="contact-form text-start appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500" action="php/contact-form.php" method="POST">
-                            <div class="contact-form-success alert alert-success d-none mt-4">
-                                <strong>Success!</strong> Your message has been sent to us.
-                            </div>
+                        <form class="contact-form text-start appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500" action="{{route('contact.submit')}}" method="POST">
+                            @csrf
 
-                            <div class="contact-form-error alert alert-danger d-none mt-4">
-                                <strong>Error!</strong> There was an error sending your message.
-                                <span class="mail-error-message text-1 d-block"></span>
-                            </div>
+                            @if (session('error'))
+                                <div class="contact-form-error alert alert-danger mt-4">
+                                    {{ session('error') }}
+                                    <span class="mail-error-message text-1 d-block"></span>
+                                </div>
+                            @endif
+                            @if (session('success'))
+                                <div class="alert alert-success mt-4 contact-form-success">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
+
+                            @if (!Auth::check())
+                                <div class="alert alert-warning mt-4 ">
+                                    Login or Sign up To access Online Booking.
+                                </div>
+                            @endif
+
+                            @if (Auth::check())
+                                <input type="hidden" value="{{Auth::user()->id}}" name="patient_id">
+                            @endif
 
                             <div class="row row-gutter-sm">
                                 <div class="form-group col-lg-6 mb-4">
-                                    <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control border-0 p-3 box-shadow-none" name="name" id="name" required placeholder="Your Name">
+                                    <select class="form-select w-100 h-100" aria-label="Select Doctor" @if(!Auth::check()) disabled @endif name="doctor_id" required>
+                                        <option value="" disabled>Select your doctor</option>
+                                        @foreach ($doctors as $doctor)
+                                            <option value="{{$doctor->id}}">{{$doctor->name}} (Joined {{$doctor->created_at->diffForHumans()}})</option>
+                                        @endforeach
+                                    </select>
+                                    @error('doctor_id')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
-                                <div class="form-group col-lg-6 mb-4">
-                                    <input type="text" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control border-0 p-3 box-shadow-none" name="phone" id="phone" required placeholder="Phone Number">
+                                <div class="form-group col-lg-3 mb-4 date">
+                                    <input @if(!Auth::check()) disabled @endif type="date" value="{{date('Y-m-d')}}" min="{{date('Y-m-d')}}" max="{{$monthLater}}" class="form-control border-0 p-3 box-shadow-none" name="date" id="date" required>
+                                    @error('date')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
-                            </div>
-                            <div class="row row-gutter-sm">
-                                <div class="form-group col-lg-6 mb-4">
-                                    <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control border-0 p-3 box-shadow-none" name="email" id="email" required placeholder="E-mail Address">
-                                </div>
-                                <div class="form-group col-lg-6 mb-4">
-                                    <input type="text" value="" data-msg-required="Please enter the service." maxlength="100" class="form-control border-0 p-3 box-shadow-none" name="service" id="service" required placeholder="Service">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col mb-4">
-                                    <textarea maxlength="5000" data-msg-required="Please enter the details." rows="10" class="form-control border-0 p-3 box-shadow-none" name="message" id="message" required placeholder="Details"></textarea>
+                                <div class="form-group col-lg-3 mb-4 date">
+                                    <input @if(!Auth::check()) disabled @endif type="time" value="{{date('H')}}:00" min="06:00 AM" max="22:00" step="1800" class="form-control border-0 p-3 box-shadow-none" name="time" id="time" required>
+                                    @error('time')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col text-end mb-0">
-                                    <button type="submit" class="btn btn-secondary border-0 text-3-5 font-weight-semi-bold btn-px-5 btn-py-3">Submit</button>
+                                    <button @if(!Auth::check()) disabled @endif type="submit" class="btn btn-secondary border-0 text-3-5 font-weight-semi-bold btn-px-5 btn-py-3">Schedule</button>
                                 </div>
                             </div>
                         </form>
@@ -144,6 +171,5 @@
                 </div>
             </div>
         </section>
-
     </div>
 @endsection

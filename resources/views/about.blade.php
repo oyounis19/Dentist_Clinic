@@ -2,6 +2,8 @@
 
 @section('title', 'About Us')
 
+@section('about_nav_active', 'active')
+
 @section('content')
     <div role="main" class="main">
 
@@ -13,7 +15,7 @@
                     </div>
                     <div class="col-md-4 order-1 order-md-2 align-self-center">
                         <ul class="breadcrumb d-flex justify-content-md-end text-4 font-weight-medium">
-                            <li class="text-capitalize"><a href="demo-dentist.html" class="text-color-default text-color-hover-primary text-decoration-none text-capitalize">Home</a></li>
+                            <li class="text-capitalize"><a href="{{route('home')}}" class="text-color-default text-color-hover-primary text-decoration-none text-capitalize">Home</a></li>
                             <li class="text-capitalize active">About</li>
                         </ul>
                     </div>
@@ -33,7 +35,7 @@
                         </defs>
                     </svg>
 
-                    <img class="img-fluid" style="clip-path: url(#svgPath); min-height: 480px; max-width: 420px;" src="img/demos/dentist/generic/generic-5.jpg" alt="">
+                    <img class="img-fluid" style="clip-path: url(#svgPath); min-height: 480px; max-width: 420px;" src="image/generic-5.jpg" alt="">
 
                 </div>
                 <div class="col-lg-6 ps-lg-4 ps-xl-5">
@@ -62,16 +64,16 @@
             </div>
             <div class="row pt-4">
                 <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center">
-                    <img src="img/demos/dentist/services/service-1.jpg" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" alt="">
+                    <img src="image/service-1.jpg" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" alt="">
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center">
-                    <img src="img/demos/dentist/services/service-2.jpg" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" alt="">
+                    <img src="image/service-2.jpg" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" alt="">
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center">
-                    <img src="img/demos/dentist/services/service-3.jpg" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" alt="">
+                    <img src="image/service-3.jpg" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" alt="">
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center">
-                    <img src="img/demos/dentist/services/service-4.jpg" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700" alt="">
+                    <img src="image/service-4.jpg" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700" alt="">
                 </div>
             </div>
             <div class="row pt-5">
@@ -89,134 +91,40 @@
 
                     <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
                         <div class="owl-carousel owl-theme nav-style-1 nav-arrows-thin nav-font-size-lg custom-nav-1 custom-nav-1-pos-3 p-relative mb-0 mt-2" data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 2}, '1199': {'items': 3}}, 'loop': true, 'nav': true, 'dots': false, 'margin': 40}">
-                            <div>
-                                <div class="card border-0">
-                                    <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
-                                        <span class="thumb-info-wrapper overlay overflow-hidden">
-                                            <img src="img/demos/dentist/team/team-1.jpg" class="img-fluid" alt="">
-                                            <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
-                                                <span class="thumb-info-swap-content-wrapper">
-                                                    <span class="thumb-info-inner text-start ps-5"></span>
-                                                    <span class="thumb-info-inner text-2">
-                                                        <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
+                            @foreach ($doctors as $doctor)
+                                    <div>
+                                        <div class="card border-0">
+                                            <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
+                                                <span class="thumb-info-wrapper overlay overflow-hidden">
+                                                    <img src="{{asset($doctor->img_path)}}" class="img-fluid" alt="Doctor {{$doctor->name}}'s' image">
+                                                    <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
+                                                        <span class="thumb-info-swap-content-wrapper">
+                                                            <span class="thumb-info-inner text-start ps-5"></span>
+                                                            <span class="thumb-info-inner text-2">
+                                                                <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">{{$doctor->desc}}</p>
 
-                                                        <ul class="social-icons social-icons-clean social-icons-icon-light">
-                                                            <li class="social-icons-instagram">
-                                                                <a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                                                            </li>
-                                                            <li class="social-icons-twitter">
-                                                                <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                                                            </li>
-                                                            <li class="social-icons-facebook">
-                                                                <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                                            </li>
-                                                        </ul>
+                                                                <ul class="social-icons social-icons-clean social-icons-icon-light">
+                                                                    <li class="social-icons-instagram">
+                                                                        <a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                                                    </li>
+                                                                    <li class="social-icons-twitter">
+                                                                        <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                                                    </li>
+                                                                    <li class="social-icons-facebook">
+                                                                        <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                                                    </li>
+                                                                </ul>
 
+                                                            </span>
+                                                        </span>
                                                     </span>
                                                 </span>
                                             </span>
-                                        </span>
-                                    </span>
-                                    <h3 class="font-weight-bold text-capitalize line-height-1 text-5-5 mt-4 mb-0">John Doe</h3>
-                                    <p class="font-weight-medium text-color-grey text-3 mb-2">Dentist, Owner</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="card border-0">
-                                    <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
-                                        <span class="thumb-info-wrapper overlay overflow-hidden">
-                                            <img src="img/demos/dentist/team/team-2.jpg" class="img-fluid" alt="">
-                                            <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
-                                                <span class="thumb-info-swap-content-wrapper">
-                                                    <span class="thumb-info-inner text-start ps-5"></span>
-                                                    <span class="thumb-info-inner text-2">
-                                                        <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
-
-                                                        <ul class="social-icons social-icons-clean social-icons-icon-light">
-                                                            <li class="social-icons-instagram">
-                                                                <a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                                                            </li>
-                                                            <li class="social-icons-twitter">
-                                                                <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                                                            </li>
-                                                            <li class="social-icons-facebook">
-                                                                <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                                            </li>
-                                                        </ul>
-
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                    <h3 class="font-weight-bold text-capitalize line-height-1 text-5-5 mt-4 mb-0">Janice Doe</h3>
-                                    <p class="font-weight-medium text-color-grey text-3 mb-2">Associate Dentist</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="card border-0">
-                                    <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
-                                        <span class="thumb-info-wrapper overlay overflow-hidden">
-                                            <img src="img/demos/dentist/team/team-3.jpg" class="img-fluid" alt="">
-                                            <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
-                                                <span class="thumb-info-swap-content-wrapper">
-                                                    <span class="thumb-info-inner text-start ps-5"></span>
-                                                    <span class="thumb-info-inner text-2">
-                                                        <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
-
-                                                        <ul class="social-icons social-icons-clean social-icons-icon-light">
-                                                            <li class="social-icons-instagram">
-                                                                <a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                                                            </li>
-                                                            <li class="social-icons-twitter">
-                                                                <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                                                            </li>
-                                                            <li class="social-icons-facebook">
-                                                                <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                                            </li>
-                                                        </ul>
-
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                    <h3 class="font-weight-bold text-capitalize line-height-1 text-5-5 mt-4 mb-0">Peter Phillips</h3>
-                                    <p class="font-weight-medium text-color-grey text-3 mb-2">Dental Hygienist</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="card border-0">
-                                    <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
-                                        <span class="thumb-info-wrapper overlay overflow-hidden">
-                                            <img src="img/demos/dentist/team/team-2.jpg" class="img-fluid" alt="">
-                                            <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
-                                                <span class="thumb-info-swap-content-wrapper">
-                                                    <span class="thumb-info-inner text-start ps-5"></span>
-                                                    <span class="thumb-info-inner text-2">
-                                                        <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
-
-                                                        <ul class="social-icons social-icons-clean social-icons-icon-light">
-                                                            <li class="social-icons-instagram">
-                                                                <a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                                                            </li>
-                                                            <li class="social-icons-twitter">
-                                                                <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                                                            </li>
-                                                            <li class="social-icons-facebook">
-                                                                <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                                            </li>
-                                                        </ul>
-
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                    <h3 class="font-weight-bold text-capitalize line-height-1 text-5-5 mt-4 mb-0">Janice Doe</h3>
-                                    <p class="font-weight-medium text-color-grey text-3 mb-2">Associate Dentist</p>
-                                </div>
-                            </div>
+                                            <h3 class="font-weight-bold text-capitalize line-height-1 text-5-5 mt-4 mb-0">{{$doctor->name}}</h3>
+                                            <p class="font-weight-medium text-color-grey text-3 mb-2">{{$doctor->title}}</p>
+                                        </div>
+                                    </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

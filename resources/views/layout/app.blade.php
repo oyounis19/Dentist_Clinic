@@ -53,7 +53,6 @@
 	</head>
 	<body data-plugin-page-transition>
 		<div class="body">
-			<!-- Logged out NavBar -->
 			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}" style="height: 104px;">
 				<div class="header-body">
 					<div class="header-container container" style="height: 100px;">
@@ -61,8 +60,8 @@
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo" style="width: 100px; height: 48px;">
-										<a href="index.html">
-											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="img/logo-default-slim.png">
+										<a href="{{route('home')}}">
+											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="{{asset('img/logo-default-slim.png')}}">
 										</a>
 									</div>
 								</div>
@@ -74,114 +73,35 @@
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li>
-														<a href="demo-dentist.html" class="nav-link">
+														<a href="{{route('home')}}" class="nav-link @yield('home_nav_active')">
 															Home
 														</a>
 													</li>
 													<li class="dropdown">
-														<a href="demo-dentist-services.html" class="nav-link dropdown-toggle active">Services</a>
+														<a href="{{route('services')}}" class="nav-link dropdown-toggle @yield('services_nav_active')">Services</a>
 														<ul class="dropdown-menu">
-															<li><a href="demo-dentist-services.html" class="dropdown-item">Overview</a></li>
-															<li><a href="demo-dentist-services-details.html" class="dropdown-item">Dental Exams</a></li>
-															<li><a href="demo-dentist-services-details.html" class="dropdown-item">Dental Cleaning</a></li>
-															<li><a href="demo-dentist-services-details.html" class="dropdown-item">Tooth Extraction</a></li>
-															<li><a href="demo-dentist-services-details.html" class="dropdown-item">Root Canal</a></li>
+															<li><a href="{{route('services')}}" class="dropdown-item">Overview</a></li>
+															<li><a href="{{route('service.exams')}}" class="dropdown-item">Dental Exams</a></li>
+															<li><a href="{{route('service.cleaning')}}" class="dropdown-item">Dental Cleaning</a></li>
+															<li><a href="{{route('service.tooth-extraction')}}" class="dropdown-item">Tooth Extraction</a></li>
+															<li><a href="{{route('service.root-canal')}}" class="dropdown-item">Root Canal</a></li>
 														</ul>
 													</li>
 													<li>
-														<a class="nav-link" href="demo-dentist-about.html">
+														<a class="nav-link @yield('about_nav_active')" href="{{route('about')}}">
 															About
 														</a>
 													</li>
+                                                    <li>
+														<a class="nav-link @yield('gallery_nav_active')" href="{{route('gallery')}}">
+															Gallery
+														</a>
+													</li>
 													<li>
-														<a class="nav-link" href="demo-dentist-contact.html">
+														<a class="nav-link @yield('contact_nav_active')" href="{{route('contact')}}">
 															Contact
 														</a>
 													</li>
-													<!-- <li class="dropdown  d-none d-xl-block dropdown-mega">
-														<a class="dropdown-item dropdown-toggle" href="elements.html">
-
-															Elements
-
-														</a>
-														<ul class="dropdown-menu border-top border-top-light mt-0">
-
-															<li>
-																<div class="dropdown-mega-content container px-2">
-																	<div class="row px-1">
-																		<div class="col-lg-3">
-																			<span class="dropdown-mega-sub-title">Elements 1</span>
-																			<ul class="dropdown-mega-sub-nav">
-																				<li><a class="dropdown-item" href="elements-accordions.html">Accordions</a></li>
-																				<li><a class="dropdown-item" href="elements-alerts.html">Alerts</a></li>
-																				<li><a class="dropdown-item" href="elements-animations.html">Animations  <span class="tip tip-dark p-relative bottom-2">hot</span></a></li>
-																				<li><a class="dropdown-item" href="elements-arrows.html">Arrows</a></li>
-																				<li><a class="dropdown-item" href="elements-badges.html">Badges</a></li>
-																				<li><a class="dropdown-item" href="elements-before-after.html">Before / After</a></li>
-																				<li><a class="dropdown-item" href="elements-blockquotes.html">Blockquotes</a></li>
-																				<li><a class="dropdown-item" href="elements-buttons.html">Buttons</a></li>
-																				<li><a class="dropdown-item" href="elements-call-to-action.html">Call to Action</a></li>
-																				<li><a class="dropdown-item" href="elements-cards.html">Cards</a></li>
-																				<li><a class="dropdown-item" href="elements-carousels.html">Carousels</a></li>
-																				<li><a class="dropdown-item" href="elements-cascading-images.html">Cascading Images</a></li>
-																			</ul>
-																		</div>
-																		<div class="col-lg-3">
-																			<span class="dropdown-mega-sub-title">Elements 2</span>
-																			<ul class="dropdown-mega-sub-nav">
-																				<li><a class="dropdown-item" href="elements-content-rotate.html">Content Rotate</a></li>
-																				<li><a class="dropdown-item" href="elements-countdowns.html">Countdowns</a></li>
-																				<li><a class="dropdown-item" href="elements-counters.html">Counters</a></li>
-																				<li><a class="dropdown-item" href="elements-dividers.html">Dividers</a></li>
-																				<li><a class="dropdown-item" href="elements-forms.html">Forms</a></li>
-																				<li><a class="dropdown-item" href="elements-headings.html">Headings</a></li>
-																				<li><a class="dropdown-item" href="elements-icons.html">Icons</a></li>
-																				<li><a class="dropdown-item" href="elements-icon-boxes.html">Icon Boxes</a></li>
-																				<li><a class="dropdown-item" href="elements-image-frames.html">Image Frames  <span class="tip tip-dark p-relative bottom-2">hot</span></a></li>
-																				<li><a class="dropdown-item" href="elements-image-gallery.html">Image Gallery</a></li>
-																				<li><a class="dropdown-item" href="elements-image-hotspots.html">Image Hotspots</a></li>
-																				<li><a class="dropdown-item" href="elements-lightboxes.html">Lightboxes</a></li>
-																			</ul>
-																		</div>
-																		<div class="col-lg-3">
-																			<span class="dropdown-mega-sub-title">Elements 3</span>
-																			<ul class="dropdown-mega-sub-nav">
-																				<li><a class="dropdown-item" href="elements-lists.html">Lists</a></li>
-																				<li><a class="dropdown-item" href="elements-maps.html">Maps</a></li>
-																				<li><a class="dropdown-item" href="elements-medias.html">Medias</a></li>
-																				<li><a class="dropdown-item" href="elements-modals.html">Modals</a></li>
-																				<li><a class="dropdown-item" href="elements-parallax.html">Parallax</a></li>
-																				<li><a class="dropdown-item" href="elements-particles.html">Particles</a></li>
-																				<li><a class="dropdown-item" href="elements-posts.html">Posts</a></li>
-																				<li><a class="dropdown-item" href="elements-pricing-tables.html">Pricing Tables</a></li>
-																				<li><a class="dropdown-item" href="elements-process.html">Process</a></li>
-																				<li><a class="dropdown-item" href="elements-progressbars.html">Progress Bars</a></li>
-																				<li><a class="dropdown-item" href="elements-random-images.html">Random Images</a></li>
-																				<li><a class="dropdown-item" href="elements-read-more.html">Read More</a></li>
-																			</ul>
-																		</div>
-																		<div class="col-lg-3">
-																			<span class="dropdown-mega-sub-title">Elements 4</span>
-																			<ul class="dropdown-mega-sub-nav">
-																				<li><a class="dropdown-item" href="elements-sections.html">Sections</a></li>
-																				<li><a class="dropdown-item" href="elements-shape-dividers.html">Shape Dividers</a></li>
-																				<li><a class="dropdown-item" href="elements-star-ratings.html">Star Ratings</a></li>
-																				<li><a class="dropdown-item" href="elements-sticky-elements.html">Sticky Elements</a></li>
-																				<li><a class="dropdown-item" href="elements-tables.html">Tables</a></li>
-																				<li><a class="dropdown-item" href="elements-tabs.html">Tabs</a></li>
-																				<li><a class="dropdown-item" href="elements-testimonials.html">Testimonials</a></li>
-																				<li><a class="dropdown-item" href="elements-toggles.html">Toggles</a></li>
-																				<li><a class="dropdown-item" href="elements-tooltips-popovers.html">Tooltips & Popovers</a></li>
-																				<li><a class="dropdown-item" href="elements-typography.html">Typography</a></li>
-																				<li><a class="dropdown-item" href="elements-word-rotator.html">Word Rotator</a></li>
-																				<li><a class="dropdown-item" href="elements-360-image-viewer.html">360º Image Viewer</a></li>
-																			</ul>
-																		</div>
-																	</div>
-																</div>
-															</li>
-														</ul>
-													</li> -->
 												</ul>
 											</nav>
 										</div>
@@ -189,204 +109,137 @@
 											<i class="fas fa-bars"></i>
 										</button>
 									</div>
-									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-										<div class="header-nav-feature header-nav-features-user d-inline-flex mx-2 pe-2 signin" id="headerAccount">
-											<a href="#" class="header-nav-features-toggle" aria-label="">
-												<i class="far fa-user"></i> Sign In
-											</a>
-											<div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed header-nav-features-dropdown-force-right" id="headerTopUserDropdown">
-												<div class="signin-form">
-													<h5 class="text-uppercase mb-4 font-weight-bold text-3">Sign In</h5>
-													<form>
-														<div class="form-group">
-															<label class="form-label mb-1 text-2 opacity-8">Email address* </label>
-															<input type="email" class="form-control form-control-lg">
-														</div>
-														<div class="form-group">
-															<label class="form-label mb-1 text-2 opacity-8">Password *</label>
-															<input type="password" class="form-control form-control-lg">
-														</div>
-														<div class="row pb-2">
-															<div class="form-group form-check col-lg-6 ps-1">
-																<div class="custom-control custom-checkbox">
-																	<input type="checkbox" class="custom-control-input" id="rememberMeCheck">
-																	<label class="form-label custom-control-label text-2" for="rememberMeCheck">Remember Me</label>
-																</div>
-															</div>
-															<div class="form-group col-lg-6 text-end">
-																<a class="text-uppercase text-1 font-weight-bold text-color-dark" id="headerRecover" href="#">LOST YOUR PASSWORD?</a>
-															</div>
-														</div>
-														<div class="actions">
-															<div class="row">
-																<div class="col d-flex justify-content-end">
-																	<a class="btn btn-primary" href="#">Login</a>
-																</div>
-															</div>
-														</div>
-														<div class="extra-actions">
-															<p>Don't have an account yet? <a href="#" id="headerSignUp" class="text-uppercase text-1 font-weight-bold text-color-dark">Sign Up</a></p>
-														</div>
-													</form>
-												</div>
+                                    @if (!Auth::check())
+                                        <div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+                                            <div class="header-nav-feature header-nav-features-user d-inline-flex mx-2 pe-2 signin" id="headerAccount">
+                                                <a href="#" class="header-nav-features-toggle" aria-label="">
+                                                    <i class="far fa-user"></i> Sign In
+                                                </a>
+                                                <div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed header-nav-features-dropdown-force-right" id="headerTopUserDropdown">
+                                                    <div class="signin-form">
+                                                        <h5 class="text-uppercase mb-4 font-weight-bold text-3">Sign In</h5>
+                                                        <form method="POST" action="{{route('login')}}">
+                                                            @csrf
+                                                            @if (session('error'))
+                                                                <div class="alert alert-danger">
+                                                                    {{ session('error') }}
+                                                                </div>
+                                                            @endif
 
-												<div class="signup-form">
-													<h5 class="text-uppercase mb-4 font-weight-bold text-3">Sign Up</h5>
-													<form>
-														<div class="form-group">
-															<label class="form-label mb-1 text-2 opacity-8">Email address* </label>
-															<input type="email" class="form-control form-control-lg">
-														</div>
-														<div class="form-group">
-															<label class="form-label mb-1 text-2 opacity-8">Password *</label>
-															<input type="password" class="form-control form-control-lg">
-														</div>
-														<div class="form-group">
-															<label class="form-label mb-1 text-2 opacity-8">Re-enter Password *</label>
-															<input type="password" class="form-control form-control-lg">
-														</div>
-														<div class="actions">
-															<div class="row">
-																<div class="col d-flex justify-content-end">
-																	<a class="btn btn-primary" href="#">Register</a>
-																</div>
-															</div>
-														</div>
-														<div class="extra-actions">
-															<p>Already have an account? <a href="#" id="headerSignIn" class="text-uppercase text-1 font-weight-bold text-color-dark">Log In</a></p>
-														</div>
-													</form>
-												</div>
+                                                            <div class="form-group">
+                                                                <label class="form-label mb-1 text-2 opacity-8">Email address*</label>
+                                                                <input type="email" class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" >
+                                                                @error('promocode')
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                        <strong>{{ $message }}</strong>
+                                                                    </span>
+                                                                @enderror
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="form-label mb-1 text-2 opacity-8">Password*</label>
+                                                                <input type="password" class="form-control form-control-lg @error('password') is-invalid @enderror" name="password" >
+                                                                @error('password')
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                        <strong>{{ $message }}</strong>
+                                                                    </span>
+                                                                @enderror
+                                                            </div>
+                                                            <div class="row pb-2">
+                                                                <div class="form-group form-check col-lg-6 ps-1">
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="rememberMeCheck" name="rmbr" value="1">
+                                                                        <label class="form-label custom-control-label text-2" for="rememberMeCheck">Remember Me</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="actions">
+                                                                <div class="row">
+                                                                    <div class="col d-flex justify-content-end">
+                                                                        <button class="btn btn-primary" href="#">Login</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="extra-actions">
+                                                                <p>Don't have an account yet? <a href="#" id="headerSignUp" class="text-uppercase text-1 font-weight-bold text-color-dark">Sign Up</a></p>
+                                                            </div>
+                                                        </form>
+                                                    </div>
 
-												<div class="recover-form">
-													<h5 class="text-uppercase mb-2 pb-1 font-weight-bold text-3">Reset My Password</h5>
-													<p class="text-2 mb-4">Complete the form below to receive an email with the authorization code needed to reset your password.</p>
+                                                    <div class="signup-form">
+                                                        <h5 class="text-uppercase mb-4 font-weight-bold text-3">Sign Up</h5>
+                                                        <form action="{{route('register')}}" method="POST">
+                                                            @csrf
 
-													<form>
-														<div class="form-group">
-															<label class="form-label mb-1 text-2 opacity-8">Email address* </label>
-															<input type="email" class="form-control form-control-lg">
-														</div>
-														<div class="actions">
-															<div class="row">
-																<div class="col d-flex justify-content-end">
-																	<a class="btn btn-primary" href="#">Reset</a>
-																</div>
-															</div>
-														</div>
-														<div class="extra-actions">
-															<p>Already have an account? <a href="#" id="headerRecoverCancel" class="text-uppercase text-1 font-weight-bold text-color-dark">Log In</a></p>
-														</div>
-													</form>
-												</div>
-
-											</div>
-										</div>
-									</div>
+                                                            <div class="form-group">
+                                                                <label class="form-label mb-1 text-2 opacity-8">Name*</label>
+                                                                <input type="text" class="form-control form-control-lg" name="name">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="form-label mb-1 text-2 opacity-8">Email address*</label>
+                                                                <input type="email" class="form-control form-control-lg" name="email">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="form-label mb-1 text-2 opacity-8">Password*</label>
+                                                                <input type="password" class="form-control form-control-lg" name="password">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="form-label mb-1 text-2 opacity-8">Re-enter Password*</label>
+                                                                <input type="password" class="form-control form-control-lg" name="password_confirmation">
+                                                            </div>
+                                                            <div class="actions">
+                                                                <div class="row">
+                                                                    <div class="col d-flex justify-content-end">
+                                                                        <button type="submit" class="btn btn-primary">Register</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="extra-actions">
+                                                                <p>Already have an account? <a href="#" id="headerSignIn" class="text-uppercase text-1 font-weight-bold text-color-dark">Log In</a></p>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @else
+                                        <div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+                                            <div class="header-nav-feature header-nav-features-user header-nav-features-user-logged d-inline-flex mx-2 pe-2" id="headerAccount">
+                                                <a href="#" class="header-nav-features-toggle" aria-label="">
+                                                    <i class="far fa-user"></i> {{Auth::user()->name}}
+                                                </a>
+                                                <div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed header-nav-features-dropdown-force-right" id="headerTopUserDropdown">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <p class="mb-0 pb-0 text-2 line-height-1 pt-1">Hello,</p>
+                                                            <p><strong class="text-color-dark text-4">{{Auth::user()->name}}</strong></p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="d-flex justify-content-end">
+                                                                <img class="rounded-circle" width="40" height="40" alt="" src="{{asset('img/avatars/avatar.jpg')}}">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <ul class="nav nav-list-simple flex-column text-3">
+                                                                <li class="nav-item"><a class="nav-link" href="{{route('appointments', Auth::user()->id)}}">My Appointments</a></li>
+                                                                <li class="nav-item"><a class="nav-link border-bottom-0" href="{{route('logout')}}">Log Out</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endif
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</header>
-			<!-- Logged In NavBar -->
-			<!-- <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
-				<div class="header-body">
-					<div class="header-container container">
-						<div class="header-row">
-							<div class="header-column">
-								<div class="header-row">
-									<div class="header-logo">
-										<a href="index.html">
-											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="img/logo-default-slim.png">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="header-column justify-content-end">
-								<div class="header-row">
-									<div class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border order-2 order-lg-1">
-										<div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
-											<nav class="collapse">
-												<ul class="nav nav-pills" id="mainNav">
-													<li>
-														<a href="demo-dentist.html" class="nav-link">
-															Home
-														</a>
-													</li>
-													<li class="dropdown">
-														<a href="demo-dentist-services.html" class="nav-link dropdown-toggle active">Services</a>
-														<ul class="dropdown-menu">
-															<li><a href="demo-dentist-services.html" class="dropdown-item">Overview</a></li>
-															<li><a href="demo-dentist-services-details.html" class="dropdown-item">Dental Exams</a></li>
-															<li><a href="demo-dentist-services-details.html" class="dropdown-item">Dental Cleaning</a></li>
-															<li><a href="demo-dentist-services-details.html" class="dropdown-item">Tooth Extraction</a></li>
-															<li><a href="demo-dentist-services-details.html" class="dropdown-item">Root Canal</a></li>
-														</ul>
-													</li>
-													<li>
-														<a class="nav-link" href="demo-dentist-about.html">
-															About
-														</a>
-													</li>
-													<li>
-														<a class="nav-link" href="demo-dentist-gallery.html">
-															Gallery
-														</a>
-													</li>
-													<li>
-														<a class="nav-link" target="_blank" href="blog-large-image-full-width.html">
-															Blog
-														</a>
-													</li>
-													<li>
-														<a class="nav-link" href="demo-dentist-contact.html">
-															Contact
-														</a>
-													</li>
-												</ul>
-											</nav>
-										</div>
-										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-											<i class="fas fa-bars"></i>
-										</button>
-									</div>
-									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-										<div class="header-nav-feature header-nav-features-user header-nav-features-user-logged d-inline-flex mx-2 pe-2" id="headerAccount">
-											<a href="#" class="header-nav-features-toggle" aria-label="">
-												<i class="far fa-user"></i> JOHN DOE
-											</a>
-											<div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed header-nav-features-dropdown-force-right" id="headerTopUserDropdown">
-												<div class="row">
-													<div class="col-8">
-														<p class="mb-0 pb-0 text-2 line-height-1 pt-1">Hello,</p>
-														<p><strong class="text-color-dark text-4">John Doe</strong></p>
-													</div>
-													<div class="col-4">
-														<div class="d-flex justify-content-end">
-															<img class="rounded-circle" width="40" height="40" alt="" src="img/avatars/avatar.jpg">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col">
-														<ul class="nav nav-list-simple flex-column text-3">
-															<li class="nav-item"><a class="nav-link" href="#">My Profile</a></li>
-															<li class="nav-item"><a class="nav-link" href="#">My Orders</a></li>
-															<li class="nav-item"><a class="nav-link border-bottom-0" href="#">Log Out</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header> -->
 			@yield('content')
+
+            @stack('scripts')
 
 			<footer id="footer" class="border-0 mt-0">
 				<div class="container pt-5">
@@ -449,20 +302,16 @@
 						<div class="col-md-6 col-lg-2 mb-5 mb-md-0">
 							<h5 class="text-transform-none font-weight-bold text-color-light text-4-5 mb-4">Our Services</h5>
 							<ul class="list list-unstyled mb-0">
-								<li class="mb-0"><a href="demo-dentist-services-details.html">Dental Exams</a></li>
-								<li class="mb-0"><a href="demo-dentist-services-details.html">Dental Cleaning</a></li>
-								<li class="mb-0"><a href="demo-dentist-services-details.html">Tooth Extraction</a></li>
-								<li class="mb-0"><a href="demo-dentist-services-details.html">Root Canal</a></li>
-								<li class="mb-0"><a href="demo-dentist-services-details.html">Clear Braces</a></li>
-								<li class="mb-0"><a href="demo-dentist-services-details.html">Teeth Whitening</a></li>
-								<li class="mb-0"><a href="demo-dentist-services-details.html">Oral Surgery</a></li>
-								<li class="mb-0"><a href="demo-dentist-services-details.html">Dental Implants</a></li>
+								<li class="mb-0"><a href="{{route('service.exams')}}">Dental Exams</a></li>
+								<li class="mb-0"><a href="{{route('service.cleaning')}}">Dental Cleaning</a></li>
+								<li class="mb-0"><a href="{{route('service.tooth-extraction')}}">Tooth Extraction</a></li>
+								<li class="mb-0"><a href="{{route('service.root-canal')}}">Root Canal</a></li>
 							</ul>
 						</div>
 						<div class="col-md-6 col-lg-3 offset-lg-1">
 							<h5 class="text-transform-none font-weight-bold text-color-light text-4-5 mb-4">Opening Hours</h5>
 							<ul class="list list-unstyled list-inline mb-0">
-								<li>Mon - Fri: 8:30 am to 5:00 pm</li>
+								<li>Mon - Fri: 6:00 am to 10:00 pm</li>
 								<li>Saturday: 9:30 am to 1:00 pm</li>
 								<li>Sunday: Closed</li>
 							</ul>
@@ -477,6 +326,7 @@
 			</footer>
 		</div>
 
+        @yield('js')
 		<!-- Vendor -->
 		<script src="{{asset('vendor/plugins/js/plugins.min.js')}}"></script>
 		<script src="{{asset('vendor/twentytwenty/js/jquery.event.move.js')}}"></script>

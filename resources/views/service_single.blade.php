@@ -1,6 +1,8 @@
 @extends('layout.app')
 
-@section('title', '')
+@section('title', 'Dental Exams')
+
+@section('services_nav_active', 'active')
 
 @section('content')
     <div role="main" class="main">
@@ -13,7 +15,7 @@
                     </div>
                     <div class="col-md-4 order-1 order-md-2 align-self-center">
                         <ul class="breadcrumb d-flex justify-content-md-end text-4 font-weight-medium">
-                            <li class="text-capitalize"><a href="demo-dentist.html" class="text-color-default text-color-hover-primary text-decoration-none text-capitalize">Home</a></li>
+                            <li class="text-capitalize"><a href="{{route('home')}}" class="text-color-default text-color-hover-primary text-decoration-none text-capitalize">Home</a></li>
                             <li class="text-capitalize active">Services</li>
                         </ul>
                     </div>
@@ -83,7 +85,7 @@
 
                 </div>
                 <div class="col-lg-4 text-center pt-4 pt-lg-0">
-                    <img src="img/demos/dentist/services/service-1.jpg" class="img-fluid box-shadow-4 appear-animation" alt="" data-appear-animation="expandIn" data-appear-animation-delay="100" data-appear-animation-duration="600ms" />
+                    <img src="image/service-1.jpg" class="img-fluid box-shadow-4 appear-animation" alt="" data-appear-animation="expandIn" data-appear-animation-delay="100" data-appear-animation-duration="600ms" />
                 </div>
             </div>
 
@@ -168,7 +170,7 @@
                     <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
                         <h3 class="font-weight-bold mb-3 text-5-5 text-color-dark text-capitalize">Ready to Start?</h3>
                         <p class="pb-1 mb-3">Curabitur vulputate posuere tortor luctus vulputate laoreet pretium blandit. </p>
-                        <a href="demo-dentist-contact.html#book" class="btn btn-secondary border-0 text-3-5 font-weight-semi-bold btn-px-5 btn-py-3">Book Appointment</a>
+                        <a href="{{route('contact')}}#book" class="btn btn-secondary border-0 text-3-5 font-weight-semi-bold btn-px-5 btn-py-3">Book Appointment</a>
                     </div>
                 </div>
             </div>

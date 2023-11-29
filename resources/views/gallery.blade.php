@@ -2,6 +2,8 @@
 
 @section('title', 'Gallery')
 
+@section('gallery_nav_active', 'active')
+
 @section('content')
     <div role="main" class="main">
 
@@ -36,9 +38,9 @@
                 <div class="col-xl-6 p-0">
                     <div data-plugin-before-after data-plugin-options="{'before_label': '', 'after_label': ''}">
                         <!-- The before image is first -->
-                        <img src="img/demos/dentist/generic/before-after-1.jpg" />
+                        <img src="Image/before-after-1.jpg" />
                         <!-- The after image is last -->
-                        <img src="img/demos/dentist/generic/before-after-2.jpg" />
+                        <img src="Image/before-after-2.jpg" />
                     </div>
                 </div>
                 <div class="col-xl-6 p-0 bg-color-tertiary text-center text-color-light">
@@ -82,9 +84,9 @@
                 <div class="col-xl-6 p-0">
                     <div data-plugin-before-after data-plugin-options="{'before_label': '', 'after_label': ''}">
                         <!-- The before image is first -->
-                        <img src="img/demos/dentist/generic/before-after-1.jpg" />
+                        <img src="Image/before-after-1.jpg" />
                         <!-- The after image is last -->
-                        <img src="img/demos/dentist/generic/before-after-2.jpg" />
+                        <img src="Image/before-after-2.jpg" />
                     </div>
                 </div>
             </div>
@@ -122,7 +124,7 @@
                         </p>
                     </div>
                     <div class="col-lg-3 text-center text-md-start text-lg-end">
-                        <a href="demo-dentist-contact.html#book" class="btn btn-secondary border-0 text-3-5 font-weight-semi-bold btn-px-5 btn-py-3">Book Appointment</a>
+                        <a href="{{route('contact')}}#book" class="btn btn-secondary border-0 text-3-5 font-weight-semi-bold btn-px-5 btn-py-3">Book Appointment</a>
                     </div>
                 </div>
             </div>
