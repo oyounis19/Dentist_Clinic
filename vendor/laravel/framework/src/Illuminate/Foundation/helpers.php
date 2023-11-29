@@ -142,9 +142,9 @@ if (! function_exists('asset')) {
      * @param  bool|null  $secure
      * @return string
      */
-    function asset($path, $secure = null)
+    function secure_asset($path, $secure = null)
     {
-        return app('url')->asset($path, $secure);
+        return app('url')->secure_asset($path, $secure);
     }
 }
 
@@ -819,9 +819,9 @@ if (! function_exists('secure_asset')) {
      * @param  string  $path
      * @return string
      */
-    function secure_asset($path)
+    function secure_secure_asset($path)
     {
-        return asset($path, true);
+        return secure_asset($path, true);
     }
 }
 

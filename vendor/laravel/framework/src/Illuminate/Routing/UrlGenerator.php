@@ -251,7 +251,7 @@ class UrlGenerator implements UrlGeneratorContract
      * @param  bool|null  $secure
      * @return string
      */
-    public function asset($path, $secure = null)
+    public function secure_asset($path, $secure = null)
     {
         if ($this->isValidUrl($path)) {
             return $path;
@@ -271,9 +271,9 @@ class UrlGenerator implements UrlGeneratorContract
      * @param  string  $path
      * @return string
      */
-    public function secureAsset($path)
+    public function securesecure_asset($path)
     {
-        return $this->asset($path, true);
+        return $this->secure_asset($path, true);
     }
 
     /**

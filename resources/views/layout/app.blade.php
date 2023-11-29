@@ -23,32 +23,32 @@
 		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}">
-		<link rel="stylesheet" href="{{asset('vendor/fontawesome-free/css/all.min.css')}}">
-		<link rel="stylesheet" href="{{asset('vendor/animate/animate.compat.css')}}">
-		<link rel="stylesheet" href="{{asset('vendor/simple-line-icons/css/simple-line-icons.min.css')}}">
-		<link rel="stylesheet" href="{{asset('vendor/owl.carousel/assets/owl.carousel.min.css')}}">
-		<link rel="stylesheet" href="{{asset('vendor/owl.carousel/assets/owl.theme.default.min.css')}}">
-		<link rel="stylesheet" href="{{asset('vendor/magnific-popup/magnific-popup.min.css')}}">
-		<link rel="stylesheet" href="{{asset('vendor/twentytwenty/css/twentytwenty.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('vendor/bootstrap/css/bootstrap.min.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('vendor/fontawesome-free/css/all.min.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('vendor/animate/animate.compat.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('vendor/simple-line-icons/css/simple-line-icons.min.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('vendor/owl.carousel/assets/owl.carousel.min.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('vendor/owl.carousel/assets/owl.theme.default.min.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('vendor/magnific-popup/magnific-popup.min.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('vendor/twentytwenty/css/twentytwenty.css')}}">
 
 		<!-- Theme CSS -->
-		<link rel="stylesheet" href="{{asset('css/theme.css')}}">
-		<link rel="stylesheet" href="{{asset('css/theme-elements.css')}}">
-		<link rel="stylesheet" href="{{asset('css/theme-blog.css')}}">
-		<link rel="stylesheet" href="{{asset('css/theme-shop.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('css/theme.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('css/theme-elements.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('css/theme-blog.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('css/theme-shop.css')}}">
 
 		<!-- Demo CSS -->
-		<link rel="stylesheet" href="{{asset('css/demos/demo-dentist.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('css/demos/demo-dentist.css')}}">
 
 		<!-- Skin CSS -->
-		<link id="skinCSS" rel="stylesheet" href="{{asset('css/skins/skin-dentist.css')}}">
+		<link id="skinCSS" rel="stylesheet" href="{{secure_asset('css/skins/skin-dentist.css')}}">
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="{{asset('css/custom.css')}}">
+		<link rel="stylesheet" href="{{secure_asset('css/custom.css')}}">
 
 		<!-- Head Libs -->
-		<script src="{{asset('vendor/modernizr/modernizr.min.js')}}"></script>
+		<script src="{{secure_asset('vendor/modernizr/modernizr.min.js')}}"></script>
 
 	</head>
 	<body data-plugin-page-transition>
@@ -61,7 +61,7 @@
 								<div class="header-row">
 									<div class="header-logo" style="width: 100px; height: 48px;">
 										<a href="{{route('home')}}">
-											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="{{asset('img/logo-default-slim.png')}}">
+											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="{{secure_asset('img/logo-default-slim.png')}}">
 										</a>
 									</div>
 								</div>
@@ -215,7 +215,7 @@
                                                         </div>
                                                         <div class="col-4">
                                                             <div class="d-flex justify-content-end">
-                                                                <img class="rounded-circle" width="40" height="40" alt="" src="{{asset('img/avatars/avatar.jpg')}}">
+                                                                <img class="rounded-circle" width="40" height="40" alt="" src="{{secure_asset('img/avatars/avatar.jpg')}}">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -328,24 +328,24 @@
 
         @yield('js')
 		<!-- Vendor -->
-		<script src="{{asset('vendor/plugins/js/plugins.min.js')}}"></script>
-		<script src="{{asset('vendor/twentytwenty/js/jquery.event.move.js')}}"></script>
-		<script src="{{asset('vendor/twentytwenty/js/jquery.twentytwenty.js')}}"></script>
+		<script src="{{secure_asset('vendor/plugins/js/plugins.min.js')}}"></script>
+		<script src="{{secure_asset('vendor/twentytwenty/js/jquery.event.move.js')}}"></script>
+		<script src="{{secure_asset('vendor/twentytwenty/js/jquery.twentytwenty.js')}}"></script>
 
 		<!-- Theme Base, Components and Settings -->
-		<script src="{{asset('js/theme.js')}}"></script>
+		<script src="{{secure_asset('js/theme.js')}}"></script>
 
 		<!-- Current Page Vendor and Views -->
-		<script src="{{asset('js/views/view.contact.js')}}"></script>
+		<script src="{{secure_asset('js/views/view.contact.js')}}"></script>
 
 		<!-- Demo -->
-		<script src="{{asset('js/demos/demo-dentist.js')}}"></script>
+		<script src="{{secure_asset('js/demos/demo-dentist.js')}}"></script>
 
 		<!-- Theme Custom -->
-		<script src="{{asset('js/custom.js')}}"></script>
+		<script src="{{secure_asset('js/custom.js')}}"></script>
 
 		<!-- Theme Initialization Files -->
-		<script src="{{asset('js/theme.init.js')}}"></script>
+		<script src="{{secure_asset('js/theme.init.js')}}"></script>
 
 	</body>
 </html>
