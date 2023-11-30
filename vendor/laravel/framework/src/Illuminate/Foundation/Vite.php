@@ -265,7 +265,7 @@ class Vite implements Htmlable
             return new HtmlString(
                 $entrypoints
                     ->prepend('@vite/client')
-                    ->map(fn ($entrypoint) => $this->makeTagForChunk($entrypoint, $this->hotsecure_asset($entrypoint), null, null))
+                    ->map(fn ($entrypoint) => $this->makeTagForChunk($entrypoint, $this->hoturl($entrypoint), null, null))
                     ->join('')
             );
         }
@@ -620,7 +620,7 @@ class Vite implements Htmlable
                 </script>
                 HTML,
                 implode(' ', $attributes),
-                $this->hotsecure_asset('@react-refresh')
+                $this->hoturl('@react-refresh')
             )
         );
     }
@@ -630,7 +630,7 @@ class Vite implements Htmlable
      *
      * @return string
      */
-    protected function hotsecure_asset($asset)
+    protected function hoturl($asset)
     {
         return rtrim(file_get_contents($this->hotFile())).'/'.$asset;
     }
@@ -642,12 +642,12 @@ class Vite implements Htmlable
      * @param  string|null  $buildDirectory
      * @return string
      */
-    public function secure_asset($asset, $buildDirectory = null)
+    public function url($asset, $buildDirectory = null)
     {
         $buildDirectory ??= $this->buildDirectory;
 
         if ($this->isRunningHot()) {
-            return $this->hotsecure_asset($asset);
+            return $this->hoturl($asset);
         }
 
         $chunk = $this->chunk($this->manifest($buildDirectory), $asset);
@@ -688,7 +688,7 @@ class Vite implements Htmlable
      */
     protected function assetPath($path, $secure = null)
     {
-        return secure_asset($path, $secure);
+        return url($path, $secure);
     }
 
     /**

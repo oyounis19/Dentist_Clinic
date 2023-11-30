@@ -45,7 +45,7 @@ interface UrlGenerator
      * @param  bool|null  $secure
      * @return string
      */
-    public function secure_asset($path, $secure = null);
+    public function url($path, $secure = null);
 
     /**
      * Get the URL to a named route.

@@ -142,9 +142,9 @@ if (! function_exists('asset')) {
      * @param  bool|null  $secure
      * @return string
      */
-    function secure_asset($path, $secure = null)
+    function url($path, $secure = null)
     {
-        return app('url')->secure_asset($path, $secure);
+        return app('url')->url($path, $secure);
     }
 }
 
@@ -812,16 +812,16 @@ if (! function_exists('route')) {
     }
 }
 
-if (! function_exists('secure_asset')) {
+if (! function_exists('url')) {
     /**
      * Generate an asset path for the application.
      *
      * @param  string  $path
      * @return string
      */
-    function secure_secure_asset($path)
+    function secure_url($path)
     {
-        return secure_asset($path, true);
+        return url($path, true);
     }
 }
 

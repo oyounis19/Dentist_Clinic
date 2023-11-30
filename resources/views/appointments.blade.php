@@ -68,22 +68,22 @@
         <div class="container-fluid py-4">
             <div class="row align-items-center text-center py-5">
                 <div class="col-sm-4 col-lg-2 mb-5 mb-lg-0">
-                    <img src="{{secure_asset('Image/logo-8.png')}}" alt="" class="img-fluid" style="max-width: 90px;">
+                    <img src="{{url('Image/logo-8.png')}}" alt="" class="img-fluid" style="max-width: 90px;">
                 </div>
                 <div class="col-sm-4 col-lg-2 mb-5 mb-lg-0">
-                    <img src="{{secure_asset('Image/logo-9.png')}}" alt="" class="img-fluid" style="max-width: 140px;">
+                    <img src="{{url('Image/logo-9.png')}}" alt="" class="img-fluid" style="max-width: 140px;">
                 </div>
                 <div class="col-sm-4 col-lg-2 mb-5 mb-lg-0">
-                    <img src="{{secure_asset('Image/logo-10.png')}}" alt="" class="img-fluid" style="max-width: 140px;">
+                    <img src="{{url('Image/logo-10.png')}}" alt="" class="img-fluid" style="max-width: 140px;">
                 </div>
                 <div class="col-sm-4 col-lg-2 mb-5 mb-sm-0">
-                    <img src="{{secure_asset('Image/logo-11.png')}}" alt="" class="img-fluid" style="max-width: 140px;">
+                    <img src="{{url('Image/logo-11.png')}}" alt="" class="img-fluid" style="max-width: 140px;">
                 </div>
                 <div class="col-sm-4 col-lg-2 mb-5 mb-sm-0">
-                    <img src="{{secure_asset('Image/logo-12.png')}}" alt="" class="img-fluid" style="max-width: 100px;">
+                    <img src="{{url('Image/logo-12.png')}}" alt="" class="img-fluid" style="max-width: 100px;">
                 </div>
                 <div class="col-sm-4 col-lg-2">
-                    <img src="{{secure_asset('Image/logo-13.png')}}" alt="" class="img-fluid" style="max-width: 100px;">
+                    <img src="{{url('Image/logo-13.png')}}" alt="" class="img-fluid" style="max-width: 100px;">
                 </div>
             </div>
         </div>
@@ -94,9 +94,9 @@
                     <div class="col-xl-6 p-0">
                         <div data-plugin-before-after data-plugin-options="{'before_label': '', 'after_label': ''}">
                             <!-- The before image is first -->
-                            <img src="{{secure_asset('Image/before-after-1.jpg')}}" />
+                            <img src="{{url('Image/before-after-1.jpg')}}" />
                             <!-- The after image is last -->
-                            <img src="{{secure_asset('Image/before-after-2.jpg')}}" />
+                            <img src="{{url('Image/before-after-2.jpg')}}" />
                         </div>
                     </div>
                     <div class="col-xl-6 p-0 bg-color-tertiary text-center text-color-light">
@@ -104,7 +104,7 @@
 
                             <div class="testimonial testimonial-style-2 px-lg-5">
                                 <div class="d-block">
-                                    <img height="80" width="80" src="{{secure_asset('img/demos/dentist/icons/icon-8.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light mt-1'}" />
+                                    <img height="80" width="80" src="{{url('img/demos/dentist/icons/icon-8.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light mt-1'}" />
                                 </div>
                                 <blockquote>
                                     <p class="mb-0 text-color-light text-5 line-height-5">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet leo acun volutpat.</p>
@@ -123,9 +123,9 @@
                     <div class="col-xl-6 p-0">
                         <div data-plugin-before-after data-plugin-options="{'before_label': '', 'after_label': ''}">
                             <!-- The before image is first -->
-                            <img src="{{secure_asset('Image/before-after-1.jpg')}}" />
+                            <img src="{{url('Image/before-after-1.jpg')}}" />
                             <!-- The after image is last -->
-                            <img src="{{secure_asset('Image/before-after-2.jpg')}}" />
+                            <img src="{{url('Image/before-after-2.jpg')}}" />
                         </div>
                     </div>
                     <div class="col-xl-6 p-0 bg-color-primary text-center text-color-light">
@@ -133,7 +133,7 @@
 
                             <div class="testimonial testimonial-style-2 px-lg-5">
                                 <div class="d-block">
-                                    <img height="80" width="80" src="{{secure_asset('img/demos/dentist/icons/icon-8.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light mt-1'}" />
+                                    <img height="80" width="80" src="{{url('img/demos/dentist/icons/icon-8.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light mt-1'}" />
                                 </div>
                                 <blockquote>
                                     <p class="mb-0 text-color-light text-5 line-height-5">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non.</p>

@@ -96,7 +96,7 @@
                                         <div class="card border-0">
                                             <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
                                                 <span class="thumb-info-wrapper overlay overflow-hidden">
-                                                    <img src="{{secure_asset($doctor->img_path)}}" class="img-fluid" alt="Doctor {{$doctor->name}}'s' image">
+                                                    <img src="{{url($doctor->img_path)}}" class="img-fluid" alt="Doctor {{$doctor->name}}'s' image">
                                                     <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
                                                         <span class="thumb-info-swap-content-wrapper">
                                                             <span class="thumb-info-inner text-start ps-5"></span>
