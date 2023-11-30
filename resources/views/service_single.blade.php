@@ -85,7 +85,7 @@
 
                 </div>
                 <div class="col-lg-4 text-center pt-4 pt-lg-0">
-                    <img src="image/service-1.jpg" class="img-fluid box-shadow-4 appear-animation" alt="" data-appear-animation="expandIn" data-appear-animation-delay="100" data-appear-animation-duration="600ms" />
+                    <img src="Image/service-1.jpg" class="img-fluid box-shadow-4 appear-animation" alt="" data-appear-animation="expandIn" data-appear-animation-delay="100" data-appear-animation-duration="600ms" />
                 </div>
             </div>
 

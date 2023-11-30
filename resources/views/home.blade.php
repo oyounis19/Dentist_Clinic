@@ -14,9 +14,9 @@
 
                         <!-- Carousel Slide 1 -->
                         <div class="owl-item p-relative overflow-hidden">
-                            <div class="background-image-wrapper p-absolute d-none d-lg-block w-100 h-100 top-0 right-0 bottom-0" style="background-image: url(image/slide-dentist-1-1.jpg); background-size: cover; max-width: 50vw;"></div>
+                            <div class="background-image-wrapper p-absolute d-none d-lg-block w-100 h-100 top-0 right-0 bottom-0" style="background-image: url(Image/slide-dentist-1-1.jpg); background-size: cover; max-width: 50vw;"></div>
 
-                            <div class="background-image-wrapper p-absolute w-100 h-100 top-0 left-0 bottom-0" style="background-image: url(image/slide-dentist-1-2.jpg); background-size: cover; max-width: 50vw;"></div>
+                            <div class="background-image-wrapper p-absolute w-100 h-100 top-0 left-0 bottom-0" style="background-image: url(Image/slide-dentist-1-2.jpg); background-size: cover; max-width: 50vw;"></div>
 
                             <div class="container p-relative z-index-3 h-100">
                                 <div class="row align-items-center h-100">
@@ -30,7 +30,7 @@
 
                         <!-- Carousel Slide 2 -->
                         <div class="owl-item p-relative overflow-hidden">
-                            <div class="background-image-wrapper p-absolute d-none d-lg-block w-100 h-100 top-0 right-0 bottom-0" style="background-image: url(image/slide-dentist-2-1.jpg); background-size: cover;"></div>
+                            <div class="background-image-wrapper p-absolute d-none d-lg-block w-100 h-100 top-0 right-0 bottom-0" style="background-image: url(Image/slide-dentist-2-1.jpg); background-size: cover;"></div>
 
                             <div class="container p-relative z-index-3 h-100">
                                 <div class="row align-items-center justify-content-end h-100">
@@ -133,7 +133,7 @@
                             </defs>
                         </svg>
 
-                        <img class="img-fluid" style="clip-path: url(#svgPath); min-height: 480px; max-width: 420px;" src="image/generic-5.jpg" alt="">
+                        <img class="img-fluid" style="clip-path: url(#svgPath); min-height: 480px; max-width: 420px;" src="Image/generic-5.jpg" alt="">
 
                     </div>
                     <div class="col-lg-6 ps-lg-4 ps-xl-5">
@@ -169,7 +169,7 @@
                         <div>
                             <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
                                 <span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
-                                    <img src="image/service-1.jpg" class="img-fluid" alt="">
+                                    <img src="Image/service-1.jpg" class="img-fluid" alt="">
                                     <span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
                                         <span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
                                             <span class="thumb-info-inner">
@@ -194,7 +194,7 @@
                         <div>
                             <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
                                 <span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
-                                    <img src="image/service-2.jpg" class="img-fluid" alt="">
+                                    <img src="Image/service-2.jpg" class="img-fluid" alt="">
                                     <span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
                                         <span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
                                             <span class="thumb-info-inner">
@@ -219,7 +219,7 @@
                         <div>
                             <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
                                 <span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
-                                    <img src="image/service-4.jpg" class="img-fluid" alt="">
+                                    <img src="Image/service-4.jpg" class="img-fluid" alt="">
                                     <span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
                                         <span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
                                             <span class="thumb-info-inner">
@@ -244,7 +244,7 @@
                         <div>
                             <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
                                 <span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
-                                    <img src="image/service-3.jpg" class="img-fluid" alt="">
+                                    <img src="Image/service-3.jpg" class="img-fluid" alt="">
                                     <span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
                                         <span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
                                             <span class="thumb-info-inner">
@@ -367,9 +367,9 @@
                     <div class="col-xl-6 p-0">
                         <div data-plugin-before-after data-plugin-options="{'before_label': '', 'after_label': ''}">
                             <!-- The before image is first -->
-                            <img src="image/before-after-1.jpg" />
+                            <img src="Image/before-after-1.jpg" />
                             <!-- The after image is last -->
-                            <img src="image/before-after-2.jpg" />
+                            <img src="Image/before-after-2.jpg" />
                         </div>
                     </div>
                     <div class="col-xl-6 p-0 bg-color-tertiary text-center text-color-light">
@@ -396,9 +396,9 @@
                     <div class="col-xl-6 p-0">
                         <div data-plugin-before-after data-plugin-options="{'before_label': '', 'after_label': ''}">
                             <!-- The before image is first -->
-                            <img src="image/before-after-1.jpg" />
+                            <img src="Image/before-after-1.jpg" />
                             <!-- The after image is last -->
-                            <img src="image/before-after-2.jpg" />
+                            <img src="Image/before-after-2.jpg" />
                         </div>
                     </div>
                     <div class="col-xl-6 p-0 bg-color-primary text-center text-color-light">
@@ -425,22 +425,22 @@
         <div class="container-fluid py-4">
             <div class="row align-items-center text-center py-5">
                 <div class="col-sm-4 col-lg-2 mb-5 mb-lg-0">
-                    <img src="image/logo-8.png" alt="" class="img-fluid" style="max-width: 90px;">
+                    <img src="Image/logo-8.png" alt="" class="img-fluid" style="max-width: 90px;">
                 </div>
                 <div class="col-sm-4 col-lg-2 mb-5 mb-lg-0">
-                    <img src="image/logo-9.png" alt="" class="img-fluid" style="max-width: 140px;">
+                    <img src="Image/logo-9.png" alt="" class="img-fluid" style="max-width: 140px;">
                 </div>
                 <div class="col-sm-4 col-lg-2 mb-5 mb-lg-0">
-                    <img src="image/logo-10.png" alt="" class="img-fluid" style="max-width: 140px;">
+                    <img src="Image/logo-10.png" alt="" class="img-fluid" style="max-width: 140px;">
                 </div>
                 <div class="col-sm-4 col-lg-2 mb-5 mb-sm-0">
-                    <img src="image/logo-11.png" alt="" class="img-fluid" style="max-width: 140px;">
+                    <img src="Image/logo-11.png" alt="" class="img-fluid" style="max-width: 140px;">
                 </div>
                 <div class="col-sm-4 col-lg-2 mb-5 mb-sm-0">
-                    <img src="image/logo-12.png" alt="" class="img-fluid" style="max-width: 100px;">
+                    <img src="Image/logo-12.png" alt="" class="img-fluid" style="max-width: 100px;">
                 </div>
                 <div class="col-sm-4 col-lg-2">
-                    <img src="image/logo-13.png" alt="" class="img-fluid" style="max-width: 100px;">
+                    <img src="Image/logo-13.png" alt="" class="img-fluid" style="max-width: 100px;">
                 </div>
             </div>
         </div>

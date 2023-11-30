@@ -34,7 +34,7 @@
                 <div class="col-md-6 col-lg-4 mb-4">
                     <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
                         <span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
-                            <img src="image/service-1.jpg" class="img-fluid" alt="">
+                            <img src="Image/service-1.jpg" class="img-fluid" alt="">
                             <span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
                                 <span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
                                     <span class="thumb-info-inner">
@@ -59,7 +59,7 @@
                 <div class="col-md-6 col-lg-4 mb-4">
                     <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
                         <span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
-                            <img src="image/service-2.jpg" class="img-fluid" alt="">
+                            <img src="Image/service-2.jpg" class="img-fluid" alt="">
                             <span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
                                 <span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
                                     <span class="thumb-info-inner">
@@ -84,7 +84,7 @@
                 <div class="col-md-6 col-lg-4 mb-4">
                     <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
                         <span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
-                            <img src="image/service-3.jpg" class="img-fluid" alt="">
+                            <img src="Image/service-3.jpg" class="img-fluid" alt="">
                             <span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
                                 <span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
                                     <span class="thumb-info-inner">
@@ -109,7 +109,7 @@
                 <div class="col-md-6 col-lg-4 mb-4">
                     <span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
                         <span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
-                            <img src="image/service-4.jpg" class="img-fluid" alt="">
+                            <img src="Image/service-4.jpg" class="img-fluid" alt="">
                             <span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
                                 <span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
                                     <span class="thumb-info-inner">
