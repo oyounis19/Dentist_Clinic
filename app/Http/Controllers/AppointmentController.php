@@ -93,7 +93,7 @@ class AppointmentController extends Controller
 
             // Calculate the difference in hours between the current time and the appointment time
             $currentTime = now();
-            $appointmentTime = $appointment->date_time;
+            $appointmentTime = $appointment->created_at;
             $hoursDifference = $currentTime->diffInHours($appointmentTime);
 
             // Check if it has been more than 24 hours since the appointment was booked
