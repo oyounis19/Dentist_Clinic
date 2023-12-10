@@ -35,7 +35,7 @@
                         </defs>
                     </svg>
 
-                    <img class="img-fluid" style="clip-path: url(#svgPath); min-height: 480px; max-width: 420px;" src="image/generic-5.jpg" alt="">
+                    <img class="img-fluid" style="clip-path: url(#svgPath); min-height: 480px; max-width: 420px;" src="{{url('Image/generic-5.jpg')}}" alt="">
 
                 </div>
                 <div class="col-lg-6 ps-lg-4 ps-xl-5">
@@ -64,16 +64,16 @@
             </div>
             <div class="row pt-4">
                 <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center">
-                    <img src="image/service-1.jpg" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" alt="">
+                    <img src="{{url('Image/service-1.jpg')}}" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" alt="">
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center">
-                    <img src="image/service-2.jpg" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" alt="">
+                    <img src="{{url('Image/service-2.jpg')}}" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" alt="">
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center">
-                    <img src="image/service-3.jpg" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" alt="">
+                    <img src="{{url('Image/service-3.jpg')}}" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" alt="">
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center">
-                    <img src="image/service-4.jpg" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700" alt="">
+                    <img src="{{url('Image/service-4.jpg')}}" class="img-fluid appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700" alt="">
                 </div>
             </div>
             <div class="row pt-5">
