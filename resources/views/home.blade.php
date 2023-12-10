@@ -508,6 +508,18 @@
                                         </span>
                                     @enderror
                                 </div>
+                                <div class="form-group col-lg-3 mb-4 date">
+                                    <select class="form-select w-100 h-100" aria-label="Select Doctor" @if(!Auth::check()) disabled @endif name="payment_m" required>
+                                        <option value="" disabled>Select Payment method</option>
+                                        <option value="1">Cash</option>
+                                        <option value="2">Card</option>
+                                    </select>
+                                    @error('doctor_id')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col text-end mb-0">

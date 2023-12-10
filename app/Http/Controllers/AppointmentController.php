@@ -68,7 +68,7 @@ class AppointmentController extends Controller
         $this->notifyUser($request);
 
         // Redirect back with a success message
-        return redirect()->back()->with('success', 'Appointment reserved, Check your mail.');
+        return redirect()->route('appointments', Auth::user()->id)->with('success', 'Appointment reserved, Check your email for details.');
     }
     private function notifyUser($request)
     {
