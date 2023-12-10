@@ -45,7 +45,7 @@
 		<link id="skinCSS" rel="stylesheet" href="{{url('css/skins/skin-dentist.css')}}">
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="{{url('css/custom.css')}}">
+		{{-- <link rel="stylesheet" href="{{url('css/custom.css')}}"> --}}
 
 		<!-- Head Libs -->
 		<script src="{{url('vendor/modernizr/modernizr.min.js')}}"></script>
@@ -215,7 +215,9 @@
                                                         </div>
                                                         <div class="col-4">
                                                             <div class="d-flex justify-content-end">
-                                                                <img class="rounded-circle" width="40" height="40" alt="" src="{{url('img/avatars/avatar.jpg')}}">
+                                                                <div class="rounded-circle" style="width: 40px; height: 40px; background-color: #007bff; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 20px;">
+                                                                    {{ substr(Auth::user()->name, 0, 1) }}
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -342,7 +344,7 @@
 		<script src="{{url('js/demos/demo-dentist.js')}}"></script>
 
 		<!-- Theme Custom -->
-		<script src="{{url('js/custom.js')}}"></script>
+		{{-- <script src="{{url('js/custom.js')}}"></script> --}}
 
 		<!-- Theme Initialization Files -->
 		<script src="{{url('js/theme.init.js')}}"></script>

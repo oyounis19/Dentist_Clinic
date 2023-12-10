@@ -20,6 +20,17 @@
             </div>
         </section>
         <div class="px-4">
+            @if (session('error'))
+                <div class="contact-form-error alert alert-danger mt-4">
+                    {{ session('error') }}
+                    <span class="mail-error-message text-1 d-block"></span>
+                </div>
+            @endif
+            @if (session('success'))
+                <div class="alert alert-success mt-4 contact-form-success">
+                    {{ session('success') }}
+                </div>
+            @endif
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -37,6 +48,9 @@
                         </th>
                         <th>
                             Booked On
+                        </th>
+                        <th>
+                            Cancel
                         </th>
                     </tr>
                 </thead>
@@ -57,6 +71,16 @@
                             </td>
                             <td>
                                 {{ \Carbon\Carbon::parse($appointment->created_at)->format('l, F j, Y') }}
+                            </td>
+                            <td>
+                                @if(\Carbon\Carbon::parse($appointment->date_time)->isPast())
+                                    <button class="btn btn-danger" disabled>Cancel</button>
+                                @else
+                                    <form action="{{route('appointment.cancel', $appointment->id)}}" method="post">
+                                        @csrf
+                                        <button class="btn btn-danger">Cancel</button>
+                                    </form>
+                                @endif
                             </td>
                         </tr>
                     @endforeach

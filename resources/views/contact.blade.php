@@ -102,7 +102,7 @@
                     <div class="col text-center">
                         <h2 class="d-inline-block line-height-5 text-4 positive-ls-3 font-weight-semibold text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter">BOOK ONLINE</h2>
                         <h3 class="text-color-dark text-9 line-height-3 text-transform-none font-weight-semibold mb-4 mb-lg-3 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">Schedule an Appointment</h3>
-                        <p class="text-3-5 font-weight-medium pb-1 mb-4 mb-lg-2 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Schedule your appointment conveniently by selecting a time that suits you and the doctor you prefer.</p>
+                        <p class="text-3-5 font-weight-medium pb-1 mb-4 mb-lg-2 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Schedule your appointment conveniently by selecting a time that suits you and the doctor you prefer. (1hr Appointment)</p>
 
                         <form class="contact-form text-start appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500" action="{{route('contact.submit')}}" method="POST">
                             @csrf
@@ -152,7 +152,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group col-lg-3 mb-4 date">
-                                    <input @if(!Auth::check()) disabled @endif type="time" value="{{date('H')}}:00" min="06:00 AM" max="22:00" step="1800" class="form-control border-0 p-3 box-shadow-none" name="time" id="time" required>
+                                    <input @if(!Auth::check()) disabled @endif type="time" value="{{date('H')+1}}:00" min="06:00 AM" max="22:00" step="3600" class="form-control border-0 p-3 box-shadow-none" name="time" id="time" required>
                                     @error('time')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>

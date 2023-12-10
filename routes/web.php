@@ -44,3 +44,5 @@ Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 Route::post('/contact/submit', [AppointmentController::class, 'reserve'])->name('contact.submit');
 
 Route::get('/user/{id}/appointments', [AppointmentController::class, 'list'])->name('appointments');
+
+Route::post('/appointment/{id}/cancel', [AppointmentController::class, 'cancel'])->name('appointment.cancel');
