@@ -307,9 +307,7 @@
 						<div class="col-md-6 col-lg-3 offset-lg-1">
 							<h5 class="text-transform-none font-weight-bold text-color-light text-4-5 mb-4">Opening Hours</h5>
 							<ul class="list list-unstyled list-inline mb-0">
-								<li>Mon - Fri: 6:00 am to 10:00 pm</li>
-								<li>Saturday: 9:30 am to 1:00 pm</li>
-								<li>Sunday: Closed</li>
+								<li>Everyday: 6:00 am to 11:00 pm</li>
 							</ul>
 						</div>
 					</div>
