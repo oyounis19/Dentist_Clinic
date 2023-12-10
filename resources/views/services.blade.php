@@ -45,7 +45,7 @@
                             <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
                                 <span class="thumb-info-swap-content-wrapper">
                                     <span class="thumb-info-inner text-start ps-5">
-                                        <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="img/demos/dentist/icons/icon-4.svg" />
+                                        <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="{{url('Image/demos/dentist/icons/icon-4.svg')}}" />
                                     </span>
                                     <span class="thumb-info-inner text-2">
                                         <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
@@ -70,7 +70,7 @@
                             <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
                                 <span class="thumb-info-swap-content-wrapper">
                                     <span class="thumb-info-inner text-start ps-5">
-                                        <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="img/demos/dentist/icons/icon-5.svg" />
+                                        <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="{{url('Image/demos/dentist/icons/icon-5.svg')}}" />
                                     </span>
                                     <span class="thumb-info-inner text-2">
                                         <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
@@ -95,7 +95,7 @@
                             <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
                                 <span class="thumb-info-swap-content-wrapper">
                                     <span class="thumb-info-inner text-start ps-5">
-                                        <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="img/demos/dentist/icons/icon-6.svg" />
+                                        <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="{{url('Image/demos/dentist/icons/icon-6.svg')}}" />
                                     </span>
                                     <span class="thumb-info-inner text-2">
                                         <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
@@ -120,7 +120,7 @@
                             <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
                                 <span class="thumb-info-swap-content-wrapper">
                                     <span class="thumb-info-inner text-start ps-5">
-                                        <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="img/demos/dentist/icons/icon-7.svg" />
+                                        <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="{{url('Image/demos/dentist/icons/icon-7.svg')}}" />
                                     </span>
                                     <span class="thumb-info-inner text-2">
                                         <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>

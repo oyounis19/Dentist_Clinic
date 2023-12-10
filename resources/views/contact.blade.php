@@ -32,7 +32,7 @@
                                 <div class="featured-box featured-box-primary">
                                     <div class="box-content">
                                         <span class="icon-featured icon-featured-lg">
-                                            <img height="100" src="img/demos/dentist/icons/icon-1.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary mt-1'}" />
+                                            <img height="100" src="{{url('Image/demos/dentist/icons/icon-1.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary mt-1'}" />
                                         </span>
                                         <h4 class="font-weight-semibold mt-3 pt-2 mb-3 text-5-5 text-color-dark">Convenient Location</h4>
                                         <p class="mb-0 text-3-5 font-weight-medium">Lorem ipsum dolor sit amet, consec tetur adipiscing el nc viverra erat orcias ac auctor.</p>
@@ -43,7 +43,7 @@
                                 <div class="featured-box featured-box-secondary">
                                     <div class="box-content">
                                         <span class="icon-featured icon-featured-lg">
-                                            <img height="100" src="img/demos/dentist/icons/icon-2.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary mt-1'}" />
+                                            <img height="100" src="{{url('Image/demos/dentist/icons/icon-2.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary mt-1'}" />
                                         </span>
                                         <h4 class="font-weight-semibold mt-3 pt-2 mb-3 text-5-5 text-color-dark">Full-Service</h4>
                                         <p class="mb-0 text-3-5 font-weight-medium">Lorem ipsum dolor sit amet, con sectetur adipiscing el nc viverra eratorci ac auctor.</p>
@@ -54,7 +54,7 @@
                                 <div class="featured-box featured-box-tertiary">
                                     <div class="box-content">
                                         <span class="icon-featured icon-featured-lg">
-                                            <img height="100" src="img/demos/dentist/icons/icon-3.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary mt-1'}" />
+                                            <img height="100" src="{{url('Image/demos/dentist/icons/icon-3.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary mt-1'}" />
                                         </span>
                                         <h4 class="font-weight-semibold mt-3 pt-2 mb-3 text-5-5 text-color-dark">Top Rated Dentists</h4>
                                         <p class="mb-0 text-3-5 font-weight-medium">Lorem ipsum dolor sit amet, consec tetur adipiscing el nc viverra eratorciac auctor.</p>

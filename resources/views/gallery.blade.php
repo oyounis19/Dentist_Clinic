@@ -48,7 +48,7 @@
 
                         <div class="testimonial testimonial-style-2 px-lg-5">
                             <div class="d-block">
-                                <img height="80" width="80" src="img/demos/dentist/icons/icon-8.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light mt-1'}" />
+                                <img height="80" width="80" src="{{url('Image/demos/dentist/icons/icon-8.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light mt-1'}" />
                             </div>
                             <blockquote>
                                 <p class="mb-0 text-color-light text-5 line-height-5">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet leo acun volutpat.</p>
@@ -69,7 +69,7 @@
 
                         <div class="testimonial testimonial-style-2 px-lg-5">
                             <div class="d-block">
-                                <img height="80" width="80" src="img/demos/dentist/icons/icon-8.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light mt-1'}" />
+                                <img height="80" width="80" src="{{url('Image/demos/dentist/icons/icon-8.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light mt-1'}" />
                             </div>
                             <blockquote>
                                 <p class="mb-0 text-color-light text-5 line-height-5">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non.</p>
