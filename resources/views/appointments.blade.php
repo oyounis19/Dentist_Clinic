@@ -188,7 +188,7 @@
             <div class="col-md-6">
                 <ul class="list list-icons font-weight-semibold text-color-dark text-4">
                     <li>
-                        <i class="icon-clock icons text-color-tertiary p-relative top-2 me-2"></i> Mon - Sat 9:00am - 6:00pm / Sunday - CLOSED
+                        <i class="icon-clock icons text-color-tertiary p-relative top-2 me-2"></i> Everyday 6:00 am to 11:00 pm
                     </li>
                     <li>
                         <i class="icon-phone icons text-color-tertiary p-relative top-2 me-2"></i> <a href="tel:123-456-7890" class="text-color-dark text-color-hover-tertiary text-decoration-none">123-456-7890</a>
