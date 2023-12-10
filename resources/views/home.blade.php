@@ -51,11 +51,11 @@
             </div>
 
             <div class="p-absolute custom-el-pos-1 d-none d-xl-block z-index-2">
-                <img width="353" height="407" src="img/demos/dentist/generic/generic-3.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary'}" />
+                <img width="353" height="407" src="{{url('Image/demos/dentist/generic/generic-3.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary'}" />
             </div>
 
             <div class="p-absolute custom-el-pos-2 rotate-l-65 d-none d-xl-block z-index-2">
-                <img width="330" height="346" src="img/demos/dentist/generic/generic-4.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" />
+                <img width="330" height="346" src="{{url('Image/demos/dentist/generic/generic-4.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" />
             </div>
         </div>
 
@@ -84,7 +84,7 @@
                                 <div class="featured-box featured-box-primary">
                                     <div class="box-content">
                                         <span class="icon-featured icon-featured-lg">
-                                            <img height="100" src="img/demos/dentist/icons/icon-1.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary mt-1'}" />
+                                            <img height="100" src="Image/demos/dentist/icons/icon-1.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary mt-1'}" />
                                         </span>
                                         <h4 class="font-weight-semi-bold mt-3 pt-2 mb-3 text-5-5 text-color-dark">Convenient Location</h4>
                                         <p class="mb-0 text-3-5 font-weight-medium">Lorem ipsum dolor sit amet, consec tetur adipiscing el nc viverra erat orcias ac auctor.</p>
@@ -95,7 +95,7 @@
                                 <div class="featured-box featured-box-secondary">
                                     <div class="box-content">
                                         <span class="icon-featured icon-featured-lg">
-                                            <img height="100" src="img/demos/dentist/icons/icon-2.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary mt-1'}" />
+                                            <img height="100" src="Image/demos/dentist/icons/icon-2.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary mt-1'}" />
                                         </span>
                                         <h4 class="font-weight-semi-bold mt-3 pt-2 mb-3 text-5-5 text-color-dark">Full-Service</h4>
                                         <p class="mb-0 text-3-5 font-weight-medium">Lorem ipsum dolor sit amet, con sectetur adipiscing el nc viverra eratorci ac auctor.</p>
@@ -106,7 +106,7 @@
                                 <div class="featured-box featured-box-tertiary">
                                     <div class="box-content">
                                         <span class="icon-featured icon-featured-lg">
-                                            <img height="100" src="img/demos/dentist/icons/icon-3.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary mt-1'}" />
+                                            <img height="100" src="Image/demos/dentist/icons/icon-3.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary mt-1'}" />
                                         </span>
                                         <h4 class="font-weight-semi-bold mt-3 pt-2 mb-3 text-5-5 text-color-dark">Top Rated Dentists</h4>
                                         <p class="mb-0 text-3-5 font-weight-medium">Lorem ipsum dolor sit amet, consec tetur adipiscing el nc viverra eratorciac auctor.</p>
@@ -180,7 +180,7 @@
                                     <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
                                         <span class="thumb-info-swap-content-wrapper">
                                             <span class="thumb-info-inner text-start ps-5">
-                                                <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="img/demos/dentist/icons/icon-4.svg" />
+                                                <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="Image/demos/dentist/icons/icon-4.svg" />
                                             </span>
                                             <span class="thumb-info-inner text-2">
                                                 <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
@@ -205,7 +205,7 @@
                                     <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
                                         <span class="thumb-info-swap-content-wrapper">
                                             <span class="thumb-info-inner text-start ps-5">
-                                                <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="img/demos/dentist/icons/icon-5.svg" />
+                                                <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="Image/demos/dentist/icons/icon-5.svg" />
                                             </span>
                                             <span class="thumb-info-inner text-2">
                                                 <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
@@ -230,7 +230,7 @@
                                     <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
                                         <span class="thumb-info-swap-content-wrapper">
                                             <span class="thumb-info-inner text-start ps-5">
-                                                <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="img/demos/dentist/icons/icon-7.svg" />
+                                                <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="Image/demos/dentist/icons/icon-7.svg" />
                                             </span>
                                             <span class="thumb-info-inner text-2">
                                                 <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
@@ -255,7 +255,7 @@
                                     <span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
                                         <span class="thumb-info-swap-content-wrapper">
                                             <span class="thumb-info-inner text-start ps-5">
-                                                <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="img/demos/dentist/icons/icon-6.svg" />
+                                                <img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="Image/demos/dentist/icons/icon-6.svg" />
                                             </span>
                                             <span class="thumb-info-inner text-2">
                                                 <p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
@@ -377,7 +377,7 @@
 
                             <div class="testimonial testimonial-style-2 px-lg-5">
                                 <div class="d-block">
-                                    <img height="80" width="80" src="img/demos/dentist/icons/icon-8.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light mt-1'}" />
+                                    <img height="80" width="80" src="Image/demos/dentist/icons/icon-8.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light mt-1'}" />
                                 </div>
                                 <blockquote>
                                     <p class="mb-0 text-color-light text-5 line-height-5">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet leo acun volutpat.</p>
@@ -406,7 +406,7 @@
 
                             <div class="testimonial testimonial-style-2 px-lg-5">
                                 <div class="d-block">
-                                    <img height="80" width="80" src="img/demos/dentist/icons/icon-8.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light mt-1'}" />
+                                    <img height="80" width="80" src="Image/demos/dentist/icons/icon-8.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light mt-1'}" />
                                 </div>
                                 <blockquote>
                                     <p class="mb-0 text-color-light text-5 line-height-5">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non.</p>

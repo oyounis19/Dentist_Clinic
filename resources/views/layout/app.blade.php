@@ -13,8 +13,7 @@
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.ico" type="Image/x-icon" />
-		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="{{url('Image/favicon.ico')}}" type="Image/x-icon" />
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -35,17 +34,12 @@
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="{{url('css/theme.css')}}">
 		<link rel="stylesheet" href="{{url('css/theme-elements.css')}}">
-		<link rel="stylesheet" href="{{url('css/theme-blog.css')}}">
-		<link rel="stylesheet" href="{{url('css/theme-shop.css')}}">
 
 		<!-- Demo CSS -->
 		<link rel="stylesheet" href="{{url('css/demos/demo-dentist.css')}}">
 
 		<!-- Skin CSS -->
 		<link id="skinCSS" rel="stylesheet" href="{{url('css/skins/skin-dentist.css')}}">
-
-		<!-- Theme Custom CSS -->
-		{{-- <link rel="stylesheet" href="{{url('css/custom.css')}}"> --}}
 
 		<!-- Head Libs -->
 		<script src="{{url('vendor/modernizr/modernizr.min.js')}}"></script>
@@ -61,7 +55,7 @@
 								<div class="header-row">
 									<div class="header-logo" style="width: 100px; height: 48px;">
 										<a href="{{route('home')}}">
-											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="{{url('img/logo-default-slim.png')}}">
+											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="{{url('Image/logo-default-slim.png')}}">
 										</a>
 									</div>
 								</div>
@@ -263,7 +257,7 @@
 					<div class="row text-center text-md-start py-4 my-5">
 						<div class="col-md-6 col-lg-3 align-self-center text-center text-md-start text-lg-center mb-5 mb-lg-0">
 							<a href="demo-auto-services.html" class="text-decoration-none">
-								<img src="img/demos/auto-services/logo-light.png" class="img-fluid" alt="" />
+								<img src="{{url('Image/logo-light.png')}}" class="img-fluid" alt="" />
 							</a>
 						</div>
 						<div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
@@ -342,9 +336,6 @@
 
 		<!-- Demo -->
 		<script src="{{url('js/demos/demo-dentist.js')}}"></script>
-
-		<!-- Theme Custom -->
-		{{-- <script src="{{url('js/custom.js')}}"></script> --}}
 
 		<!-- Theme Initialization Files -->
 		<script src="{{url('js/theme.init.js')}}"></script>
