@@ -50,7 +50,7 @@ class AppointmentController extends Controller
             'date_time' => $dateTime,
         ]);
 
-        // $this->notifyUser($request);
+        $this->notifyUser($request);
 
         // Redirect back with a success message
         return redirect()->back()->with('success', 'Appointment reserved, Check your mail.');
