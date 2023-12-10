@@ -134,7 +134,7 @@
                                     <select class="form-select w-100 h-100" aria-label="Select Doctor" @if(!Auth::check()) disabled @endif name="doctor_id" required>
                                         <option value="" disabled>Select your doctor</option>
                                         @foreach ($doctors as $doctor)
-                                            <option value="{{$doctor->id}}">{{$doctor->name}} (Joined {{$doctor->created_at->diffForHumans()}})</option>
+                                            <option value="{{$doctor->id}}">{{$doctor->name}} (Joined {{$doctor->created_at->diffForHumans()}}) ({{$doctor->title}})</option>
                                         @endforeach
                                     </select>
                                     @error('doctor_id')

@@ -45,7 +45,7 @@ class UserController extends Controller
 
     public function showcontactPage(){
         return view('contact', [
-            'doctors' => Doctor::all(['id', 'name', 'created_at']),
+            'doctors' => Doctor::all(['id', 'name', 'title', 'created_at']),
             'monthLater' => Carbon::now()->addMonth()->toDateString(),
         ]);
     }
