@@ -46,3 +46,7 @@ Route::post('/contact/submit', [AppointmentController::class, 'reserve'])->name(
 Route::get('/user/{id}/appointments', [AppointmentController::class, 'list'])->name('appointments');
 
 Route::post('/appointment/{id}/cancel', [AppointmentController::class, 'cancel'])->name('appointment.cancel');
+
+Route::get('/payment/card', [AppointmentController::class, 'showPaymentPage'])->name('payment.card');
+
+Route::post('/payment/card/pay', [AppointmentController::class, 'pay'])->name('pay');

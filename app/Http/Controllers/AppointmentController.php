@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\AppointmentRequest;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Http\Request;
 use App\Models\Appointment;
 use App\Models\Doctor;
 use App\Models\User;
@@ -15,6 +16,20 @@ class AppointmentController extends Controller
     {
         if (!Auth::check()) {
             return redirect()->back()->with('error', 'You must be logged in to perform online booking.');
+        }
+        if (isset($request->payment_m) && $request->payment_m == 2 && !isset($request->paid)) {
+            // Store the appointment details in the session
+            session([
+                'appointment' => [
+                    'patient_id' => $request->patient_id,
+                    'doctor_id' => $request->doctor_id,
+                    'date' => $request->date,
+                    'time' => $request->time,
+                ]
+            ]);
+
+            // Redirect to the payment page
+            return redirect()->route('payment.card');
         }
 
         // Combine the selected date and time into a single datetime string
@@ -55,13 +70,13 @@ class AppointmentController extends Controller
         // Redirect back with a success message
         return redirect()->back()->with('success', 'Appointment reserved, Check your mail.');
     }
-    private function notifyUser(AppointmentRequest $request)
+    private function notifyUser($request)
     {
-        $patient = User::find($request->patient_id);
-        $doctor = Doctor::find($request->doctor_id);
+        $patient = User::find($request['patient_id']);
+        $doctor = Doctor::find($request['doctor_id']);
 
         $emailContent = "Dear {$patient->name},\n\n";
-        $emailContent .= "Your appointment with Dr. {$doctor->name} is scheduled for {$request->date} at {$request->time}.\n";
+        $emailContent .= "Your appointment with Dr. {$doctor->name} is scheduled for {$request['date']} at {$request['time']}.\n";
         $emailContent .= "Thank you for choosing our services!\n\nBest regards,\nYour Dentist Clinic";
 
         // Send the email
@@ -107,5 +122,33 @@ class AppointmentController extends Controller
         }
 
         return redirect()->back()->with('success', 'Appointment cancelled. Your money will be refunded by the bank you paid with.');
+    }
+    public function showPaymentPage()
+    {
+        return view('payment');
+    }
+
+    public function pay(Request $request)
+    {
+        // Retrieve the appointment details from the session
+        $appointmentDetails = session('appointment');
+
+        if ($appointmentDetails) {
+            // Create a new appointment
+            $appointment = new Appointment();
+            $appointment->patient_id = $appointmentDetails['patient_id'];
+            $appointment->doctor_id = $appointmentDetails['doctor_id'];
+            $appointment->date_time = $appointmentDetails['date'] . ' ' . $appointmentDetails['time'];
+            $appointment->save();
+
+            $this->notifyUser($appointmentDetails);
+            // Clear the session
+            $request->session()->forget('appointment');
+
+
+            return redirect()->route('appointments', Auth::user()->id)->with('success', 'Appointment reserved, Check your email for details.');
+        } else {
+            return redirect()->back()->with('error', 'No appointment found in the session.');
+        }
     }
 }
